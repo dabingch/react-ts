@@ -1,7 +1,9 @@
-import React from 'react'
+interface ChildProps {
+	color: string
+}
 
-function Child() {
-	return <div>Hi there</div>
+function Child({ color }: ChildProps) {
+	return <div>{color}</div>
 }
 
 export default Child
